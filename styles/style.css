@@ -1,5 +1,42 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background: var(--main-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.decorated-zone {
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content 1fr 1fr;
+}
+
+.header__rec {
+  position: absolute;
+  height: fit-content;
+}
+
+.header__theme-menu {
+  grid-row: 2;
+}
+
+.header__no-focus {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: 700;
+  line-height: 82.5%;
+  grid-row: 3;
+  grid-column: 1 / span 3;
+}
+
+.title-decor {
+  grid-row: 4;
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: center;
 }
