@@ -4,39 +4,201 @@
   background: var(--main-color);
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
-}
-
-.decorated-zone {
+  padding: 10px;
+  line-height: 23.4px;
+  font-size: var(--text-size);
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: fit-content 1fr 1fr;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  right: 0;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  left: 0;
+  bottom: 0;
 }
 
 .header__rec {
-  position: absolute;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  line-height: 25px;
+  gap: 28px;
+  position: relative;
   height: fit-content;
+  color: var(--accent-color);
+  font-size: var(--text-size);
+}
+
+.header__rec::after {
+  content: ' ';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-right: 9px;
 }
 
 .header__theme-menu {
   grid-row: 2;
+  justify-self: end;
+  margin-block-start: 40px;
+  writing-mode: horizontal-tb;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  height: 26px;
+  text-transform: lowercase;
+  background-color: transparent;
+  border: 0;
+  font-family: 'IBM Plex mono', Arial, sans-serif;
+  color: var(--accent-color);
+  font-size: var(--text-size);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.6);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
 
 .header__no-focus {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: 700;
   line-height: 82.5%;
   grid-row: 3;
   grid-column: 1 / span 3;
+  margin-block-start: 65px;
+  writing-mode: horizontal-tb;
 }
 
-.title-decor {
+.header__text {
   grid-row: 4;
   grid-column: 1 / span 3;
   display: flex;
   align-items: center;
+  margin-block: 57px 56px;
+}
+
+.title-decor {
+  font-weight: bold;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+.title-text {
+  font-weight: normal;
+}
+
+.main {
+  margin-block: 50px 40px;
+}
+
+.section {
+  margin-block-end: var(--space-md);
+}
+
+.section:last-child {
+  margin: 0;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-size: var(--text-size);
+}
+
+.section__title-text {
+  margin-block: 20px 10px;
+  font-size: var(--text-size);
+}
+
+.section__off-title {
+  margin: 20px 0;
+  font-size: var(--text-size);
+}
+
+.footer {
+  position: relative;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  right: 0;
+  top: 0;
 }

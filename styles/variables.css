@@ -3,4 +3,10 @@
   --accent-color: #ff0070;
   --primary-color: #f1b2ce;
   --title-color: #db00ff;
+  --text-size: 18px;
+  --space-xs: 10px;
+  --space-sm: 20px;
+  --space-md: 50px;
+  --space-lg: 60px;
+  --space-xl: 80px;
 }
