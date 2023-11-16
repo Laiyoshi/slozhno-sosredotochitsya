@@ -1,12 +1,103 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root.theme-dark {
+  --main-color: #000028;
+  --accent-color: #ff0070;
+  --primary-color: #f1b2ce;
+  --title-color: #db00ff;
+  --off-title-color: #ff0070;
+  --accent-color-hover: #ff007066;
+  --visibility-item: 1;
+  --background-img: url(../images/cover-image-dark.png);
+}
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background: var(--main-color);
+  background-image: var(--background-img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header::after {
+  border-top: 1px solid var(--off-title-color);
+  border-inline-end: 1px solid var(--off-title-color);
+}
+
+.header::before {
+  border-bottom: 1px solid var(--off-title-color);
+  border-inline-start: 1px solid var(--off-title-color);
+}
+
+.header__rec {
+  color: var(--accent-color);
+  font-size: var(--text-size);
+}
+
+.header__rec::after {
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.header__theme-menu-button {
+  color: var(--off-title-color);
+  font-size: var(--text-size);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color-hover);
+}
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--off-title-color);
+}
+
+.header__no-focus {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+.title-decor {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+.section {
+  margin-block-end: var(--space-md);
+}
+
+.section__title {
+  color: var(--off-title-color);
+}
+
+.section__text {
+  color: var(--primary-color);
+}
+
+.section__text-link {
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.section__text-link:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.section__text-link:focus-visible {
+  outline: 1px solid var(--primary-color);
+}
+
+.footer__title {
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.footer::before {
+  border-bottom: 1px solid var(--off-title-color);
+  border-inline-start: 1px solid var(--off-title-color);
+}
+
+.footer::after {
+  border-top: 1px solid var(--off-title-color);
+  border-inline-end: 1px solid var(--off-title-color);
 }

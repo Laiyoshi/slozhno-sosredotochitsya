@@ -1,12 +1,117 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root.theme-light {
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-img: url(../images/cover-image-light.png);
+  --main-color: #353430;
+  --accent-color: #ff8dcb;
+  --primary-color: #353430;
+  --title-color: #ffc2e6;
+  --off-title-color: #353430;
+  --visibility-item: 0;
+  --accent-color-hover: #35343066;
+  background: var(--main-color);
+  background-image: var(--background-img);
+  font-size: var(--text-size);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header__rec {
+  opacity: var(--visibility-item);
+}
+
+.header__theme-menu-button {
+  color: var(--off-title-color);
+  font-size: var(--text-size);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color-hover);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--off-title-color);
+  pointer-events: none;
+}
+
+.header__no-focus {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.title-decor {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+.section {
+  margin-block-end: var(--space-md);
+}
+
+.section__title {
+  color: var(--off-title-color);
+  font-size: var(--text-size);
+}
+
+.section__title-text {
+  font-size: var(--text-size);
+}
+
+.section__off-title {
+  font-size: var(--text-size);
+}
+
+.section__text {
+  color: var(--primary-color);
+}
+
+.section__text-link {
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.section__text-link:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.section__text-link:focus-visible {
+  outline: 1px solid var(--primary-color);
+}
+
+.footer__title {
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.footer::before {
+  border-bottom: 1px solid var(--off-title-color);
+  border-inline-start: 1px solid var(--off-title-color);
+}
+
+.footer::after {
+  border-top: 1px solid var(--off-title-color);
+  border-inline-end: 1px solid var(--off-title-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: #353430;
+    --accent-color: #ff8dcb;
+    --primary-color: #353430;
+    --title-color: #ffc2e6;
+    --off-title-color: #353430;
+    --accent-color-hover: #35343066;
+    --background-img: url(../images/cover-image-light.png);
+  }
 }
