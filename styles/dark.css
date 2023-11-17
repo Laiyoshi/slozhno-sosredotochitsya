@@ -63,10 +63,6 @@
   background-color: var(--accent-color);
 }
 
-.section {
-  margin-block-end: var(--space-md);
-}
-
 .section__title {
   color: var(--off-title-color);
 }
