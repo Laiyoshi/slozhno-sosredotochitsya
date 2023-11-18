@@ -92,9 +92,9 @@
       </section>
       <section class="section section__concentrate">
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
-        <div class="section__container section__concentrate">
+        <div id="first" class="section__container section__concentrate">
           <h3 class="section__title-text title-decor">Многозадачность</h3>
-          <p class="section__text ">
+          <p class="section__text">
             Как концентрация может снижаться из-за… концентрации? Любая
             стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш
             мозг постоянно «сканировать» окружающую среду на предмет опасности.
@@ -103,7 +103,7 @@
             не давать ей отдохнуть.
           </p>
         </div>
-        <div class="section__container section__concentrate">
+        <div id="second" class="section__container section__concentrate">
           <h3 class="section__title-text title-decor">Еда</h3>
           <p class="section__text">
             «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -114,7 +114,7 @@
             больше быстрых углеводов.
           </p>
         </div>
-        <div class="section__container section__concentrate">
+        <div id="third" class="section__container section__concentrate">
           <h3 class="section__title-text title-decor">Гаджеты</h3>
           <p class="section__text">
             Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -132,10 +132,10 @@
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <h3 class="section__off-title title-decor">
-          5 простых (на самом деле не очень) советов
-        </h3>
         <div class="section__container">
+          <h3 class="section__off-title title-decor">
+            5 простых (на самом деле не очень) советов
+          </h3>
           <h4 class="section__title-text title-decor title-text">
             Представьте небо и облака
           </h4>
@@ -173,9 +173,10 @@
               >показал</a
             >, что созерцание природы повышает концентрацию, в то время как
             после просмотра городских пейзажей она наоборот понижается. Можно
-            совместить прогулку с физическими упражнениями или бегом — так в
-            мозг поступит ещё больше кислорода и он будет лучше работать. Но и
-            простая двадцатиминутная прогулка — тоже отличный вариант.
+            совместить <span class="section__letter">п</span>рогулку с
+            физическими упражнениями или бегом — так в мозг поступит ещё больше
+            кислорода и он будет лучше работать. Но и простая двадцатиминутная
+            прогулка — тоже отличный вариант.
           </p>
         </div>
         <div class="section__container">
@@ -200,37 +201,49 @@
         </div>
       </section>
       <section class="section section__gallery">
-        <h3 class="section__title-text title-decor">А можно в картинках?</h3>
-        <img
-          src="./images/sunset.png"
-          alt="Закат на фоне гор и облаков"
-          class="section__image"
-          loading="lazy"
-        />
-        <img
-          src="./images/ice-cream.png"
-          alt="Улыбающаяся миска с шариками-котиками в виде мороженого"
-          class="section__image"
-          loading="lazy"
-        />
-        <img
-          src="./images/tape.png"
-          alt="Аудио касета в градиентом стиле, окруженная компонентами операционной системы"
-          class="section__image"
-          loading="lazy"
-        />
-        <img
-          src="./images/books.png"
-          alt="Стопка книг с чашкой кофе на вершине"
-          class="section__image"
-          loading="lazy"
-        />
-        <img
-          src="./images/street.png"
-          alt="Улица Японии в стиле 'минимализм'"
-          class="section__image"
-          loading="lazy"
-        />
+        <h3 class="section__title-text title-decor title-gallery">
+          А можно в картинках?
+        </h3>
+        <div class="image-container sunset">
+          <img
+            src="./images/sunset.png"
+            alt="Закат на фоне гор и облаков"
+            class="section__image"
+            loading="lazy"
+          />
+        </div>
+        <div class="image-container ice-cream">
+          <img
+            src="./images/ice-cream.png"
+            alt="Улыбающаяся миска с шариками-котиками в виде мороженого"
+            class="section__image"
+            loading="lazy"
+          />
+        </div>
+        <div class="image-container tape">
+          <img
+            src="./images/tape.png"
+            alt="Аудио касета в градиентом стиле, окруженная компонентами операционной системы"
+            class="section__image"
+            loading="lazy"
+          />
+        </div>
+        <div class="image-container books">
+          <img
+            src="./images/books.png"
+            alt="Стопка книг с чашкой кофе на вершине"
+            class="section__image"
+            loading="lazy"
+          />
+        </div>
+        <div class="image-container street">
+          <img
+            src="./images/street.png"
+            alt="Улица Японии в стиле 'минимализм'"
+            class="section__image"
+            loading="lazy"
+          />
+        </div>
       </section>
     </main>
     <footer class="footer">
