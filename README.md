@@ -1,3 +1,3 @@
 # slozhno-sosredotochitsya
 Проект "Сложно сосредоточиться"
-https://github.com/Laiyoshi/slozhno-sosredotochitsya
+https://github.com/Laiyoshi/slozhno-sosredotochitsya.git
