@@ -11,7 +11,7 @@
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --space-xs: 10px;
   --space-sm: 20px;
-  --space-md: 50px;
+  --space-md: 40px;
   --space-lg: 60px;
   --space-xl: 80px;
 }

@@ -5,15 +5,15 @@
   --title-color: #db00ff;
   --off-title-color: #ff0070;
   --accent-color-hover: #ff007066;
-  --visibility-item: 1;
   --background-img: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark {
-  background: var(--main-color);
-  background-image: var(--background-img);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  --main-color: #000028;
+  --accent-color: #ff0070;
+  --primary-color: #f1b2ce;
+  --title-color: #db00ff;
+  --off-title-color: #ff0070;
+  --accent-color-hover: #ff007066;
+  --background-img: url(../images/cover-image-dark.png);
 }
