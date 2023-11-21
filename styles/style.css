@@ -307,10 +307,6 @@
     grid-column: 2;
   }
 
-  .section__letter {
-    letter-spacing: 0.6em;
-  }
-
   .section__things-container {
     grid-column: 2;
   }
